@@ -15,7 +15,7 @@
       <input type='submit'></input>
     </form>
     <ul >
-      <li ng-repeat='todo in list'>
+      <li ng-repeat='todo in list' ng-click='remove($index)'>
         {{todo}}
       </li>
     </ul>
