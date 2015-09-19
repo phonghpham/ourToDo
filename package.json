@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/PhongHPham/ourToDo/issues"
   },
-  "homepage": "https://github.com/PhongHPham/ourToDo#readme"
+  "homepage": "https://github.com/PhongHPham/ourToDo#readme",
+  "dependencies": {
+    "angular": "^1.4.6"
+  }
 }
