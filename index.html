@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <script src='node_modules/angular/angular.js'></script>
-  <script src='app.js'></script>
 
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
+  <script src='node_modules/angular/angular.js'></script>
+  <sript src='node_modules/bootstrap/dist/js/bootstrap.min.js'></sript>
+  <script src='app.js'></script>
   <title>Our To Do</title>
+
 </head>
 <body class="app" ng-app='OurToDo'>
-  <h1>OUR DO</h1>
-  <div ng-controller='todoController'>
-    <form ng-submit='add()'>
-      <input ng-model='item'>  </input>
-      <input type='submit'></input>
-    </form>
-    <ul >
-      <li ng-repeat='todo in list' ng-click='remove($index)'>
-        {{todo}}
-      </li>
-    </ul>
+
+  <div class='container'>
+    <h1 class='jumbotron'>OUR DO</h1>
+    <div ng-controller='todoController'>
+      <form ng-submit='add()'>
+        <input ng-model='item'>  </input>
+        <input type='submit'></input>
+      </form>
+      <ul class='row'>
+        <li class='span-1' ng-repeat='todo in list' ng-click='remove($index)'>
+          {{todo}}
+        </li>
+      </ul>
+    </div>
   </div>
+
 </body>
 </html>
